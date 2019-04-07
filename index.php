@@ -11,7 +11,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <?php requiere_once 'process.php'; ?>
     <!-- Initial Form -->
     <div class="row justify-content-center">
     <form action="process.php" method="POST">
