@@ -12,7 +12,8 @@
 </head>
 <body>
     <!-- Initial Form -->
-    <form class="row justify-content-center" action="" method="POST">
+    <div class="row justify-content-center">
+    <form action="" method="POST">
       <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" value="Enter your Name">        
@@ -33,8 +34,9 @@
         <label>Skills</label>
         <input type="text" name="skills" value="Enter your Skills">
       </div>
-      <button type="submit" name="save">Save</button>
+      <button class="btn btn-primary" type="submit" name="save">Save</button>
     </form>
+  </div>
 </body>
 </html>
 
