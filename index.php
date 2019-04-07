@@ -1,28 +1,7 @@
 <?php
-session_start();
-$_SESSION['message'] = '';
-// Conection to the database
-$mysqli = new mysqli('localhost', 'root', 'calderon1812', 'test')
-?>
-<?php
-if($_SERVER['REQUEST_METHOD'] == 'POST'){
-  $name = $mysqli->real_escape_string($_POST['name']);
-  $email = $mysqli->real_escape_string($_POST['email']);
-  $location = $mysqli->real_escape_string($_POST['location']);
-  $skills = $mysqli->real_escape_string($_POST['skills']);
 
-  $sql = "INSERT INTO users (name, email, location, skills) " . "VALUES ('$name', '$email', '$location', '$skills')";
-
-  //If the submission is sucessfully redirect to user administration
-  if ($mysqli->query($sql) === true) {
-    $_SESSION['message'] = 'REGISTRATION SUCCESFUL! ADDED $NAME TO THE USERS!';
-    header("location: usersAdministration.php");
-  }
-}
 ?>
 
-
-<link rel="stylesheet" href="form\form.css" type="text/css">
 <div class="body-content">
   <div class="module">
     <h1>Create an user</h1>
