@@ -11,28 +11,29 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+  <?php  requiere_once 'process.php';?>
     <!-- Initial Form -->
     <div class="row justify-content-center">
-    <form action="" method="POST">
+    <form action="process.php" method="POST">
       <div class="form-group">
         <label>Name</label>
-        <input type="text" name="name" value="Enter your Name">        
+        <input type="text" name="name" class="form-control" value="Enter your Name">        
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" name="email" value="Enter your Email">
+        <input type="email" name="email" class="form-control" value="Enter your Email">
       </div>
       <div class="form-group">
         <label>Password</label>
-        <input type="password" name="password">
+        <input type="password" name="password" class="form-control">
       </div>
       <div class="form-group">
         <label>Location</label>
-        <input type="text" name="location" value="Enter your Location">
+        <input type="text" name="location" class="form-control" value="Enter your Location">
       </div>
       <div class="form-group">
         <label>Skills</label>
-        <input type="text" name="skills" value="Enter your Skills">
+        <input type="text" name="skills" class="form-control" value="Enter your Skills">
       </div>
       <button class="btn btn-primary" type="submit" name="save">Save</button>
     </form>
