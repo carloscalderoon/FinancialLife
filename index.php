@@ -12,28 +12,28 @@
 </head>
 <body>
     <!-- Initial Form -->
-    <div class="row justify-content-center"></div>
+    <div class="row justify-content-center">
     <form action="" method="POST">
       <div class="form-group">
-      <label>Name</label>
-      <input type="text" name="name" value="Enter your Name">        
+        <label>Name</label>
+        <input type="text" name="name" value="Enter your Name">        
       </div>
       <div class="form-group">
-      <label>Email</label>
-      <input type="email" name="email" value="Enter your Email">
-    </div>
-          <div class="form-group">
-      <label>Password</label>
-      <input type="password" name="password">
-    </div>
-          <div class="form-group">
-      <label>Location</label>
-      <input type="text" name="location" value="Enter your Location">
-    </div>
-          <div class="form-group">
-      <label>Skills</label>
-      <input type="text" name="skills" value="Enter your Skills">
-    </div>
+        <label>Email</label>
+        <input type="email" name="email" value="Enter your Email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" name="password">
+      </div>
+      <div class="form-group">
+        <label>Location</label>
+        <input type="text" name="location" value="Enter your Location">
+      </div>
+      <div class="form-group">
+        <label>Skills</label>
+        <input type="text" name="skills" value="Enter your Skills">
+      </div>
       <button type="submit" name="save">Save</button>
     </form>
   </div>
