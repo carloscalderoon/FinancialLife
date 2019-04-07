@@ -11,10 +11,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <?php  requiere_once 'process.php';?>
+  <?php  requiere_once 'ProcessFiles/process.php';?>
     <!-- Initial Form -->
     <div class="row justify-content-center">
-    <form action="process.php" method="POST">
+    <form action="ProcessFiles/process.php" method="POST">
       <div class="form-group">
         <label>Name</label>
         <input type="text" name="name" class="form-control" value="Enter your Name">        
