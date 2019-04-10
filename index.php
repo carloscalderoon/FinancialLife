@@ -21,7 +21,7 @@ try {
 ?>
 <!-- Initial Form -->
     <div class="row justify-content-center">
-    <form method="post" action="process.php">
+    <form action="process.php" method="post" >
       <div class="form-group">
         <label>First Name</label>
         <input type="text" name="firstname" class="form-control">        
