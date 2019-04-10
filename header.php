@@ -46,10 +46,10 @@
             <a class="nav-link js-scroll-trigger" href="#about">Users</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Log In</a>
+            <a class="nav-link js-scroll-trigger" href="login.php">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Register</a>
+            <a class="nav-link js-scroll-trigger" href="">Register</a>
           </li>
         </ul>
       </div>
