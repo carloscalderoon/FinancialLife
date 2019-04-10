@@ -46,7 +46,7 @@ try {
         <label>Skills</label>
         <input type="text" name="skills" class="form-control">
       </div>
-      <button class="btn btn-primary" type="submit" name="save">Save</button>
+      <button class="btn btn-primary" type="submit" value="Save">Save</button>
     </form>
   </div>
 </body>
