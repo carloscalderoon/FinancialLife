@@ -1,6 +1,4 @@
 <?php
-$page_title = null;
-$page_title = 'Login';
 require_once('header.php'); ?>
 
     <!-- Header -->
@@ -9,7 +7,7 @@ require_once('header.php'); ?>
             <div class="intro-text">
                 <div class="intro-lead-in">Welcome To iFinance!</div>
                 <div class="intro-heading text-uppercase">We are here faciltate your finance</div>
-                <div><button>Log In</button></div>
+                <div><a href="login.php" class="btn btn-dark"></a></div>
             </div>
 
         </header>
