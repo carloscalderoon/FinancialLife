@@ -17,7 +17,7 @@
 
 	echo "My name is $Firstname $Lastname";
 
-	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES ('$Firstname', '$Lastname', '$Email', '$Location', '$Skills', '$Password')";
+	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:Firstname, :Lastname, :Email, :Location, :Skills, :Password)";
 
 	if (!mysql_query($conn,$sql)) {
 		echo "Not inserted";
