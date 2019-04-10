@@ -17,6 +17,7 @@ if (isset($_POST['save'])) {
 	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:Firstname, :Lastname, :Email, :Location, :Skills, :Password)";
 
 	echo "User Saved!";
+	echo mysql_error();
 }
 
 // $conn = null;
