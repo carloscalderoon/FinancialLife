@@ -1,6 +1,13 @@
 <?php
 
-$mysqli = new mysqli('127.0.0.1:53694', 'localdb', 'azure', '6#vWHD_$') or die(mysqli_error($mysqli));
+try {
+	//Connection to Database
+	$db = new PDO('mysql:host=127.0.0.1:53694; dbname=localdb', 'azure','6#vWHD_$');
+	echo "<p> You are connected! Yay! </p>";
+} catch (PDOException $e) {
+		echo "<p> Sorry you can't connect.</p>";
+		echo $e;
+}
 
 if (isset($_POST['save'])) {
 	$firstname = $_POST['firstname'];
@@ -11,5 +18,5 @@ if (isset($_POST['save'])) {
 	$password = $_POST['password'];
 
 
-	$mysqli->query("INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES ('$firstname', '$lastname', '$email'. '$location', '$skills', '$password')") or die(mysql->error);
+	$mysqli->query("INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (':firstname', ':lastname', 'email'. '$location', '$skills', '$password')") or die(mysql->error);
 }
