@@ -1,19 +1,21 @@
 <?php
-	$firstname = $_POST['firstname'];
-	$lastname = $_POST['lastname'];
-	$email = $_POST['email'];
-	$location = $_POST['location'];
-	$skills = $_POST['skills'];
-	$password = $_POST['password'];
+	$Firstname = $_POST['firstname'];
+	$Lastname = $_POST['lastname'];
+	$Email = $_POST['email'];
+	$Location = $_POST['location'];
+	$Skills = $_POST['skills'];
+	$Password = $_POST['password'];
 
-	requiere_once('db.php')
+	echo "My name is $Firstname $Lastname";
 
-if (isset($_POST['save'])) {
+// 	requiere_once('db.php')
 
-	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:firstname, :lastname, email.    :location, :skills, :password)";
-}
+// if (isset($_POST['save'])) {
 
-$conn = null;
+// 	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:firstname, :lastname, email.    :location, :skills, :password)";
+// }
 
-echo "User Saved!";
+// $conn = null;
+
+// echo "User Saved!";
 ?>
