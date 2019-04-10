@@ -13,7 +13,7 @@
 <body>
 <!-- Initial Form -->
     <div class="row justify-content-center">
-    <form action="process.php" method="POST">
+    <form method="post" action="process.php">
       <div class="form-group">
         <label>First Name</label>
         <input type="text" name="firstname" class="form-control">        

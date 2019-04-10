@@ -1,5 +1,4 @@
 <?php
-if (isset($_POST['save'])) {
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
 	$email = $_POST['email'];
@@ -7,7 +6,14 @@ if (isset($_POST['save'])) {
 	$skills = $_POST['skills'];
 	$password = $_POST['password'];
 
+	requiere_once('db.php')
 
-	$mysqli->query("INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (':firstname', ':lastname', 'email'. '$location', '$skills', '$password')") or die(mysql->error);
+if (isset($_POST['save'])) {
+
+	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:firstname, :lastname, email.    :location, :skills, :password)";
 }
+
+$conn = null;
+
+echo "User Saved!";
 ?>
