@@ -8,14 +8,14 @@
 
 	echo "My name is $Firstname $Lastname";
 
-// 	requiere_once('db.php')
+	requiere('db.php')
 
-// if (isset($_POST['save'])) {
+if (isset($_POST['save'])) {
 
-// 	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:firstname, :lastname, email.    :location, :skills, :password)";
-// }
+	$sql = "INSERT INTO users (FirstName, LastName, Email, Location, Skills, Password) VALUES (:Firstname, :Lastname, :Email, :Location, :Skills, :Password)";
+}
 
 // $conn = null;
 
-// echo "User Saved!";
+echo "User Saved!";
 ?>
