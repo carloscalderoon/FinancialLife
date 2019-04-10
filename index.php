@@ -9,16 +9,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <?php
-try {
-  //Connection to Database
-  $conn = new PDO('mysql:host=127.0.0.1:53694; dbname=localdb', 'azure','6#vWHD_$');
-  echo "Yey!";
-} catch (PDOException $e) {
-    echo "<p> Sorry you can't connect.</p>";
-    echo $e;
-}
-?>
 <!-- Initial Form -->
     <div class="row justify-content-center">
     <form action="process.php" method="post" >
