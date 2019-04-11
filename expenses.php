@@ -24,7 +24,7 @@ foreach ($expenses as $expense) {
 	echo '<tr><td>' . $expense['origin'] . '</td>
 		<td>' . $expense['amount'] . '</td>
 		<td><a href="expenses.php?expenseId=' . $expense['expenseId'] . '">Edit</a></td>
-		<td><a href="delete-movie.php?expenseId=' . $expense['expenseId'] . '" 
+		<td><a href="deleteExpense.php?expenseId=' . $expense['expenseId'] . '" 
 			onclick="return confirm(\'Are you sure you want to delete this charge?\');">Delete</td></tr>';
 }
 
