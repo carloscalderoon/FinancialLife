@@ -27,16 +27,13 @@ if ($ok) {
     // connect
     require_once ('db.php');
 
-    // set up the sql insert
     $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
 
-    // fill the params and execute
     $cmd = $conn->prepare($sql);
     $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
     $cmd->bindParam(':password', $password, PDO::PARAM_STR, 128);
     $cmd->execute();
 
-    // disconnect
     $conn = null;
 
     echo 'Your registration was successful.  Click to <a href="login.php">Log In</a>';

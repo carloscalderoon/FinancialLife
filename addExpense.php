@@ -3,38 +3,30 @@
 // authentication check
 require_once('authe.php');
 
-// embed the header
 require_once('header.php');
 
-// initialize variables
 $expenseId = null;
 $origin = null;
 $amount = null;
 
 
-// check the url for a movie_id parameter and store the value in a variable if we find one
 if (empty($_GET['expenseId']) == false) {
 	$expenseId = $_GET['expenseId'];
 
-	// connect
 	require_once('db.php');
-	
-	// write the sql query
+
 	$sql = "SELECT * FROM expenses WHERE expenseId = :expenseId";
 	
-	// execute the query and store the results
 	$cmd = $conn->prepare($sql);
 	$cmd->bindParam(':expenseId', $expenseId, PDO::PARAM_INT);
 	$cmd->execute();
 	$movies = $cmd->fetchAll();
-	
-	// populate the fields for the selected movie from the query result
+
 	foreach ($expenses as $expense) {
 		$origin = $expense['origin'];
 		$amount = $expense['amount'];
 	}
-	
-	// disconnect
+
 	$conn = null;
 }
 
@@ -56,6 +48,6 @@ if (empty($_GET['expenseId']) == false) {
 	    </form>
 	</div>
 
-<?php // embed footer
+<?php 
 require_once('footer.php'); 
 ob_flush(); ?>

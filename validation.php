@@ -24,7 +24,7 @@ if ($count == 0) {
     exit();
 }
 else {
-    session_start(); // access the existing session
+    session_start(); 
 
     foreach  ($users as $user) {
         $_SESSION['user_id'] = $user['user_id'];
