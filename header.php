@@ -41,7 +41,10 @@
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="expenses.php">Expenses</a>
             </li>
-            <li><a class="nav-link js-scroll-trigger" href="logout.php" title="Logout">Logout</a></li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="users.php">Users</a>
+            </li>
+            <li><a class="nav-link js-scroll-trigger" href="logout.php">Logout</a></li>
           <?
         } else { ?>
             <li class="nav-item">
