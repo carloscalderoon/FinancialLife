@@ -40,7 +40,7 @@
             <a class="nav-link js-scroll-trigger" href="#services">Incomes</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Expenses</a>
+            <a class="nav-link js-scroll-trigger" href="expenses.php">Expenses</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">Users</a>

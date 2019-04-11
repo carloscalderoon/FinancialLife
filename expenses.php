@@ -15,7 +15,7 @@ $cmd->execute();
 $expenses = $cmd->fetchAll();
 
 // start the html display table
-echo '<a href="expenses.php"">Add a Charge</a>
+echo '<a href="addExpense.php"">Add a Charge</a>
 <table class="table table-striped table-hover"><thead><th>Origin</th><th>Amount</th>
 <th>Edit</th><th>Delete</th></thead><tbody>';
 

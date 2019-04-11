@@ -54,7 +54,7 @@ if ($ok == true) {
 
 
 	if (!empty($expenseId)) {
-		$cmd->bindParam(':expenseId', $movie_id, PDO::PARAM_INT);
+		$cmd->bindParam(':expenseId', $expenseId, PDO::PARAM_INT);
 	}
 
 	$cmd->execute();
