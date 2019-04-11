@@ -29,6 +29,8 @@ else {
     foreach  ($users as $user) {
         $_SESSION['user_id'] = $user['user_id'];
     }
+
+    header('location:expenses.php');
 }
 
 $conn = null;
