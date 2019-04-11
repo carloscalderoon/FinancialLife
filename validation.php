@@ -5,7 +5,7 @@ require_once('header.php');
 
 <?php
 $username = $_POST['username'];
-$password = hash('sha512', $_POST['password']);
+$password = $_POST['password'];
 
 require('db.php');
 

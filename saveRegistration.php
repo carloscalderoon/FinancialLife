@@ -30,13 +30,10 @@ if ($ok) {
     // set up the sql insert
     $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
 
-    // hash the password
-    $hashed_password = hash('sha512', $password);
-
     // fill the params and execute
     $cmd = $conn->prepare($sql);
     $cmd->bindParam(':username', $username, PDO::PARAM_STR, 50);
-    $cmd->bindParam(':password', $hashed_password, PDO::PARAM_STR, 128);
+    $cmd->bindParam(':password', $password, PDO::PARAM_STR, 128);
     $cmd->execute();
 
     // disconnect
