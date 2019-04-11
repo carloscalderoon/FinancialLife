@@ -21,7 +21,7 @@ echo '
 
 // loop through the results and show each movie in a new row and each value in a new column
 foreach ($users as $user) {
-	echo '<tr><td>' . $user['user'] . '</td></tr>';
+	echo '<tr><td>' . $user['username'] . '</td></tr>';
 }
 
 // close the table and body
