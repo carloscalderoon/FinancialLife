@@ -1,7 +1,7 @@
 <?php
 require_once('header.php');
 ?>
-<div class="container">
+<div class="container containerFixed">
 	<h1>Log In</h1>
 	<form method="post" action="validation.php">
 		<fieldset class="form-group">
