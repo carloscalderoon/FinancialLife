@@ -26,17 +26,17 @@
 </head>
 
 <body id="page-top">
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top "id="mainNavFixed" style="position:inherit!important">
-        <div class="container">
-            <a class="navbar-brand" href="/">iFinance</a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top " id="mainNavFixed" style="position:inherit!important">
+    <div class="container">
+      <a class="navbar-brand" href="/">iFinance</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-        <?php // show public or private links depending on whether the user has been authenticated
+          <?php // show public or private links depending on whether the user has been authenticated
           if (!empty($_SESSION['user_id'])) { ?>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="expenses.php">Expenses</a>
@@ -44,6 +44,9 @@
             <li><a class="nav-link js-scroll-trigger" href="logout.php" title="Logout">Logout</a></li>
           <?php
         } else { ?>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="expenses.php">Expenses</a>
+            </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="login.php">Log In</a>
             </li>
