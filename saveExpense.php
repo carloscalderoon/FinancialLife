@@ -39,18 +39,16 @@ if ($ok == true) {
 	require_once('db.php');
 	
 	if (empty($expenseId)) {
-		// set up the SQL INSERT command
 		$sql = "INSERT INTO expenses (origin, amount) VALUES (:origin, :amount)";
 	}
 	else {
-		// set up the SQL UPDATE command to modify the existing movie
 		$sql = "UPDATE expenses SET origin = :origin, amount = :a,ount WHERE expenseId = :expenseId";
 	}
 	
 	// create a command object and fill the parameters with the form values
 	$cmd = $conn->prepare($sql);
-	$cmd->bindParam(':origin', $title, PDO::PARAM_STR, 50);
-	$cmd->bindParam(':amount', $year, PDO::PARAM_INT);
+	$cmd->bindParam(':origin', $origin, PDO::PARAM_STR, 50);
+	$cmd->bindParam(':amount', $amount, PDO::PARAM_INT);
 
 
 	if (!empty($expenseId)) {
