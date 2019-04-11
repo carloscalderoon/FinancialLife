@@ -15,7 +15,7 @@ $cmd->execute();
 $expenses = $cmd->fetchAll();
 
 // start the html display table
-echo '<a href="addExpense.php"">Add a Charge</a>
+echo '<a href="addExpense.php" class="btn btn-primary btn-xl text-uppercase">Add a Charge</a>
 <table class="table table-striped table-hover"><thead><th>Origin</th><th>Amount</th>
 <th>Edit</th><th>Delete</th></thead><tbody>';
 
@@ -23,9 +23,9 @@ echo '<a href="addExpense.php"">Add a Charge</a>
 foreach ($expenses as $expense) {
 	echo '<tr><td>' . $expense['origin'] . '</td>
 		<td>' . $expense['amount'] . '</td>
-		<td><a href="expenses.php?expenseId=' . $expenseId['expenseId'] . '">Edit</a></td>
-		<td><a href="deleteExpense.php?expenseId=' . $expenseId['expenseId'] . '" 
-			onclick="return confirm(\'Are you sure you want to delete this charge?\');">Delete</td></tr>';
+		<td><a href="expenses.php?expenseId=' . $expense['expenseId'] . '">Edit</a></td>
+		<td><a href="deleteExpense.php?expenseId=' . $expense['expenseId'] . '" 
+		onclick="return confirm(\'Are you sure you want to delete this charge?\');">Delete</td></tr>';
 }
 
 // close the table and body
